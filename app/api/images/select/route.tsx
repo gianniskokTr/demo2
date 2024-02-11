@@ -4,7 +4,7 @@ import { CARD_DIMENSIONS } from '../../../config';
 
 export async function GET() {
   return new ImageResponse(
-    <Card message="Test 4" />,
+    <Card message={`This is a test 1`} />,
     CARD_DIMENSIONS,
   );
 }
