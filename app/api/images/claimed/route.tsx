@@ -4,7 +4,7 @@ import { CARD_DIMENSIONS } from '../../../config';
 
 export async function GET() {
   return new ImageResponse(
-    <Card message="You've already claimed, but you can mint with Warps." />,
+    <Card message={"You've already claimed, but you can mint with Warps."} />,
     CARD_DIMENSIONS,
   );
 }
