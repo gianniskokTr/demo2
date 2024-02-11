@@ -7,5 +7,5 @@ export async function GET(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams;
   const address = searchParams.get('address') ?? '';
 
-  return new ImageResponse(<Card message={`Confirm test`} />, CARD_DIMENSIONS);
+  return new ImageResponse(<Card message={`Mint to ${address}?`} />, CARD_DIMENSIONS);
 }
