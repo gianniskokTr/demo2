@@ -1,5 +1,5 @@
 import { ZDK, ZDKNetwork, ZDKChain } from '@zoralabs/zdk';
-import { NEXT_PUBLIC_URL, ZORA_COLLECTION_ADDRESS, ZORA_TOKEN_ID } from '../config';
+import {NEXT_PUBLIC_URL, TOKEN_IMAGE, ZORA_COLLECTION_ADDRESS, ZORA_TOKEN_ID} from '../config';
 
 const networkInfo = {
   network: ZDKNetwork.Base,
@@ -21,7 +21,7 @@ export async function getCollection() {
     includeFullDetails: false,
   });
   const name = collection.token?.token.name ?? 'Unknown Collection';
-  const image = `${NEXT_PUBLIC_URL}/horse.png`;
+  const image = TOKEN_IMAGE;
   //collection.token?.token.image?.mediaEncoding?.original ?? `${NEXT_PUBLIC_URL}/giraffe.png`;
   return { name, image, address: ZORA_COLLECTION_ADDRESS, tokenId: ZORA_TOKEN_ID };
 }
