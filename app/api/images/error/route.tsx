@@ -4,7 +4,7 @@ import { CARD_DIMENSIONS } from '../../../config';
 
 export async function GET() {
   return new ImageResponse(
-    <Card message="You don't have an active badge. You can mint with Warps below." />,
+    <Card message="Something went wrong. Try again later." />,
     CARD_DIMENSIONS,
   );
 }
