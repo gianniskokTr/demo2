@@ -11,7 +11,8 @@ export function Card({ message, image }: { message: string; image?: string }) {
         justifyContent: 'center',
         flexDirection: 'column',
         textAlign: 'center',
-        ...CARD_DIMENSIONS,
+        width: 800,
+        height: 800,
       }}
     >
       <img style={{ width: '100%', height: '100%', marginTop: '-212px' }} src={imageSrc} />
