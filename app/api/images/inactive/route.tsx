@@ -4,7 +4,7 @@ import {CARD_DIMENSIONS, NEXT_PUBLIC_URL} from '../../../config';
 
 export async function GET() {
   return new ImageResponse(
-    <Card message="You can mint with Warps below." image={`${NEXT_PUBLIC_URL}/horse.png`}/>,
+    <Card message="You can mint with Warps below." />,
     CARD_DIMENSIONS,
   );
 }
