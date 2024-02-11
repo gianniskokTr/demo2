@@ -2,7 +2,7 @@ import { Hex, zeroAddress } from 'viem';
 import { privateKeyToAccount } from 'viem/accounts';
 import { base } from 'viem/chains';
 
-const SIGNER_PRIVATE_KEY = (process.env.SIGNER_PRIVATE_KEY ?? '0x87b4450bdc4037c4e5ff5ae5d417b41ec3fce900751c2780de18887c93c0e8f8') as Hex;
+const SIGNER_PRIVATE_KEY = (process.env.SIGNER_PRIVATE_KEY ?? '0x87b4450bdc4037c4e5ff5ae5d417b41ec3fce900751c2780de18887c93c0e8f8') as Hex; //Random key do not put a valid one
 const MINTER_CONTRACT = (process.env.MINTER_CONTRACT ?? zeroAddress) as Hex;
 
 const account = privateKeyToAccount(SIGNER_PRIVATE_KEY);
